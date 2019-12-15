@@ -1,0 +1,23 @@
+{
+    "name": "maagiline/estonian-id-php",
+    "description": "PHP library for authentication and signing with ID-card and Mobile-ID",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "phpseclib/phpseclib": "~2.0",
+        "sk-id-solutions/mobile-id-php-client": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "maagiline\\EstonianIdPhp\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "maagiline\\EstonianIdPhp\\EIDServiceProvider"
+            ]
+        }
+    }
+}
